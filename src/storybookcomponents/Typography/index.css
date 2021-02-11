@@ -1,0 +1,34 @@
+.typography-main {
+    font-family: SF Pro Display;
+    display: flex;
+    align-items: center;
+}
+
+.size-12 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.size-14 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.size-24 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.blue {
+    color: #295DA1;
+}
+
+.black {
+    color: #212122;
+}

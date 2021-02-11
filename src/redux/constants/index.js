@@ -1,0 +1,20 @@
+//users
+export const GET_USER = "GET_USER";
+export const USER_ERROR = "USER_ERROR";
+
+//Countries
+export const GET_COUNTRIES = "GET_COUNTRIES";
+export const GET_COUNTRIES_LOADER = "GET_COUNTRIES_LOADER";
+export const GET_COUNTRIES_ERROR = "GET_COUNTRIES_ERROR";
+//States
+export const GET_STATES = "GET_STATES";
+export const GET_STATES_LOADER = "GET_STATES_LOADER";
+export const GET_STATES_ERROR = "GET_STATES_ERROR";
+//Cities
+export const GET_CITIES = "GET_CITIES";
+export const GET_CITIES_LOADER = "GET_CITIES_LOADER";
+export const GET_CITIES_ERROR = "GET_CITIES_ERROR";
+//Newspappers
+export const GET_NEWSPAPPERS = "GET_NEWSPAPPERS";
+export const GET_NEWSPAPPERS_LOADER = "GET_NEWSPAPPERS_LOADER";
+export const GET_NEWSPAPPERS_ERROR = "GET_NEWSPAPPERS_ERROR";
