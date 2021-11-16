@@ -1,14 +1,17 @@
-import { combineReducers } from "redux";
-import user from "./user";
-import countries from "./countries";
-import states from "./states";
-import cities from "./cities";
-import newspappers from "./newspappers";
+import { combineReducers } from 'redux';
+import authReducer from './auth';
+import { persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage';
+const persistConfig = {
+    key: 'joyage',
+    storage,
+    whitelist: ['auth']
 
-export default combineReducers({ 
-    user,
-    countries,
-    states,
-    cities,
-    newspappers
+}
+const rootReducer = combineReducers({
+    auth: authReducer
 });
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+
+export default persistedReducer;

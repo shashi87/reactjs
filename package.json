@@ -1,36 +1,44 @@
 {
-  "name": "wastoriedui",
+  "name": "react_proto",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^6.0.0",
-    "@tailwindcss/postcss7-compat": "^2.0.2",
-    "@testing-library/jest-dom": "^5.11.8",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.6.0",
-    "antd": "^4.12.2",
-    "autoprefixer": "^9.8.6",
-    "axios": "^0.21.1",
-    "node-sass": "^4.14.1",
-    "postcss": "^7.0.35",
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.1",
+    "@testing-library/user-event": "^12.2.0",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "d3": "^6.6.0",
+    "express": "^4.17.1",
+    "history": "^5.0.0",
     "react": "^17.0.1",
-    "react-d3-tree": "^2.0.1",
     "react-dom": "^17.0.1",
+    "react-hook-form": "^6.11.0",
+    "react-loader-spinner": "^3.1.14",
+    "react-paginate": "^7.0.0",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "reactstrap": "^8.8.1",
+    "react-scripts": "4.0.0",
+    "react-table": "^7.6.2",
+    "react-toast-notifications": "^2.4.0",
+    "reactstrap": "^8.7.1",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "three": "^0.128.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start:dev": "env-cmd -f .env.development react-scripts start",
+    "start:prod": "env-cmd -f .env.production react-scripts start",
+    "build:dev": "env-cmd -f .env.dev npm run-script build",
+    "build:prod": "env-cmd -f .env.production npm run-script build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,8 +57,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "babel-plugin-import": "^1.13.3"
   }
 }

@@ -1,4 +1,4 @@
-/* body {
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,57 +10,26 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-} */
-
-/* ./src/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-@layer base {
- 
-  html,
-body {
-    width: 100%;
-    height: 100%;
 }
 
-body {
-  background-color:#EFEFF0
+.pagination {
+  display: inline-block;
 }
 
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
-@layer components {
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1340px
-  }
-}
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
 }
 
-#root {
-    height: 100%;
-}
-
-.wrapper {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 100%;
-}
-
-/* Nav */
-nav a.active {
-  @apply bg-gray-100 text-gray-900 ring-0
-}
-
-/* Footer */
-.footer .copy,
-.footer-links a {
-  color:#555658
-}
-.footer-links a:hover {
-  color:#5F85B9
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
 }

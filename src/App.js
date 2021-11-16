@@ -1,22 +1,17 @@
-import React from "react";
-import Main from "./pages";
 import './App.css';
+import { Provider } from 'react-redux';
+import { store, persistor } from './redux/store'
+import { PersistGate } from 'redux-persist/integration/react';
+import AppRouter from './routers/AppRouter'
 
-// Redux setup
-import { Provider } from "react-redux";
-import store from "./redux/store";
-
-// Font Families
-import './fonts/FontsFree-Net-SFProDisplay-Regular.ttf';
-
-// Antd CSS
-import "antd/dist/antd.css";
-
-const App = () => {
+function App() {
   return (
     <Provider store={store}>
-      <Main/>
+      <PersistGate persistor={persistor}>
+        <AppRouter />
+      </PersistGate>
     </Provider>
-  )
+  );
 }
+
 export default App;
