@@ -1,0 +1,104 @@
+@import '../../../theme.scss';
+
+.solution-main-wrapper {
+    width: 100%;
+    height: auto;
+    background: $primary;
+    padding: 5rem 0;
+
+    .solution-container {
+        max-width: 715px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        .solution-content-wrap {
+            max-width: 628px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .solution-title {
+                font-size: 3rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 125%;
+                letter-spacing: -0.96px;
+                color: $white;
+                text-align: center;
+
+                @media(max-width:767px) {
+                    font-size: 1.5rem;
+                }
+
+            }
+
+            .solution-description {
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                color: $white;
+                text-align: center;
+
+            }
+
+            .btn-wrap {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+
+                .btn {
+                    &:hover {
+                        background: $primary;
+                        color: $white;
+                    }
+                }
+            }
+
+            .app-icon-container{
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap:1rem;
+                @media(max-width:1199px){
+                    .app-icon{
+                        img{
+                            height: 48px;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+
+        .solution-app-view {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+
+            @media(max-width:767px) {
+                gap: .75rem
+            }
+        }
+
+        @media(max-width:767px) {
+            gap: 2.5rem
+        }
+
+    }
+
+    @media(max-width:767px) {
+        padding: 2.5rem;
+    }
+}

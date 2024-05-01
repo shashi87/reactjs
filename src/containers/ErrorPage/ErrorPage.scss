@@ -1,0 +1,68 @@
+@import '../../theme.scss';
+
+.error-page-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 4.5rem;
+    // padding-top: 7rem;
+    background: #E5F0FF;
+    height: 100dvh;
+    align-items: center;
+    justify-content: center;
+
+    .error-page-content {
+        width: 100%;
+        height: auto;
+       margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 628px;
+        width: 100%;
+       
+
+        .error-page-icon {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            @media(max-width:767px){
+                svg{
+                    width: 72px;
+                    height: 72px;
+                }
+            }
+        }
+
+        .error-page-title {
+            width: 100%;
+            text-align: center;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+            letter-spacing: -1.2px;
+            @media(max-width:767px){
+                font-size: 1.875rem;
+            }
+        }
+
+        .error-page-description {
+            width: 100%;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            padding: 0 3.4375rem;
+            text-align: center;
+            @media(max-width:767px){
+                padding: 0;
+            }
+        }
+    }
+
+    @media(max-width:991px) {
+        padding-top: 4.4375rem;
+        height: 80dvh;
+    }
+}
